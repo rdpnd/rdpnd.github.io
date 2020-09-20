@@ -1,0 +1,25 @@
+[meta title:"Toughts on Nand2Tetris Part 1" description:"Into this coursera course" /]
+
+[Header
+  fullWidth:true
+  title:"Toughts on Nand2Tetris Part 1"
+  date:`(new Date()).toDateString()`
+  background:"#222222"
+  color:"#ffffff"
+   /]
+
+## Introduction
+
+
+* [Nand2Tetris 1](https://www.coursera.org/learn/build-a-computer) is one of the highies rated courses in Coursera and it shows as it have a very high production quallity. This course presents you with all of the tools needed to build a working computer architecure.
+* This course is build and lectured by Shimon Schocken and Noam Nisan (who btw won Knuth Prize in 2016 for contributions to theoretical computer science)
+
+
+* The course goes trought the process of explaning the rudimentary of boolean logic and its application in gates, then by using the composability of the nand operator (not and) it teaches us how to build up other basic boolean operations and afterwards do arithmetics (+ is just a series of xors, ands, ors and nots) via provided hardware defined language 
+* Afterwards, we are presented with the idea of flip-flops and given a D flip flop as a primitive (it has 1 input and 1 output and it always outputs the input from the point T-1). With that abstraction we HLD our way into the memory as we build 64k memory chip.
+* Then, Noam and Shimon present their basic machine language (assembler) which later we are going to use in order to comunicate with the CPU
+* Finally, we build the CPU chip which consists mostly of an Arithmetic-Logic Unit (ALU)
+* In the last week, we are given the task to build a translator of the asm language in "binary" (i.e. text file containing 0 and 1s) using whichever computer language we choose.
+
+  
+All in all, I wouldn't say that I have learned so much new information, because I have already taken a Computer Architecture course in the university, however this course did provide a hopefuly usefull intuition on how a CPUs operate. This course also makes you think - how hard it would be to build a computer from scratch? Not sure if it would be that interesting (as building the common blocks of a CPU is a very tedious job, I cant even fanthom the number of hours needed for  weilding components) however a interesting project would be to build an isolated component [such as a GPU](https://www.youtube.com/watch?v=l7rce6IQDWs) 
