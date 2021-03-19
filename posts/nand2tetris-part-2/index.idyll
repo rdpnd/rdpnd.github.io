@@ -1,0 +1,19 @@
+[meta title:"Toughts on Nand2Tetris Part 2" description:"Into this coursera course" /]
+
+[Header
+  fullWidth:true
+  title:"Toughts on Nand2Tetris Part 2"
+  date:`(new Date()).toDateString()`
+  background:"#222222"
+  color:"#ffffff"
+   /]
+
+## Introduction
+
+
+* [Nand2Tetris 2](https://www.coursera.org/learn/nand2tetris2) is the succesor of Nand2Tetris Part 1. It continues from where Part 1 finished - namely after building the assembler. It goes through the motion of building a VM a high level language and a primitive OS, which is a ton more work than the previous course. Ive spent at more than 5 times the effort on completing this one compared to its predecessor. 
+* This course is also lectured by the same guys from the first one - Shimon Schocken and Noam Nisan, which comes to no surprice as this project (afaik) originated as a book and afterwards continued as a course with videos.
+
+* In the first week we were presented with a refresher on the Hack language (which was quite helpful, as I took at least a month gap between the courses). Afterwards we had to build the numeric-logical part of the proposed VM. First of all, why were are building a VM instead of directly going for a primitive-yet-high-level language? Well, its way easier to implement this in a 2 steps instead of direclt producing asm from a given source.
+* In week 8 (next one) we had to finish the VM implementation with program flow commands (goto, if-goto, label) and functions. For me personally, it was somewhat refreshing after the not-that-deep part 1 of the course we reached a non trivial goal and frankly it was really cool seeing my VM implementation in action. That said, I had issues with trying to understand what are the requirements - Basically, troughout the course, every week we are given a set of material (via the book or course videos) and at the end we are tasked with completing a project. However the is no concrete specification on what needs to be done (i.e. "You need to implement a VM which does these and these operations"). In part 1 this was absolutely fine as requirements were easily deducible by the comments in the HLD files. However, in the VM projects I had to spent some time researching what exactly is the format of the given VM. 
+* The previous point brings me to my main pain point - This course tries to target the widest range of an audiance and by doing that it goes to this weird middle ground where one need to spent considerable amount of time to finish it, however there is a lot more that one could learn if he just goes after a targeted course (for example [Crafting Interpreters](http://craftinginterpreters.com/a-map-of-the-territory.html#intermediate-representations)). 
